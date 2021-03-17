@@ -4,6 +4,13 @@
 <h2>State Name: <%= @city.state %> </h2>
 <hr/>
 
+<h2>Restaurants</h2>
+<ul>
+<% @city.restaurants.each do |restaurant| %>
+    <li> <%= restaurant.name %> </li>
+    <% end %>
+</ul>
+
 <form action='/cities/<%= @city.id %>' method='post'>
 <input type ='hidden' name='_method' value='delete'>
 <input type ='submit' value='Demolish City or Nuke if you are a savage'>

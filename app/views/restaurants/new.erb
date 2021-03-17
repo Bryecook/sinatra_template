@@ -1,0 +1,14 @@
+<h1>Start a new restaurant</h1>
+<form action='/restaurants' method='post'>
+<label>Name of Restaurant</label>
+<input type='text' name='restaurant_name'>
+<br/>
+<label>City, State</label>
+<select name='city_id'>
+<% @cities.each do |city| %>
+    <option value=<%= city.id%> > <%= city.name%>, <%= city.state%> </option>
+<% end %>
+</select>
+<br/>
+<input type="submit">
+</form>

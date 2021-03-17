@@ -1,0 +1,7 @@
+<h1>This is a restaurant index page</h1>
+
+<ul>
+<% @restaurants.each do |restaurant| %>
+    <li> <%=restaurant.name%> at <%= restaurant.city.name %> <%= restaurant.city.state%></li>
+    <% end %>
+</ul>
