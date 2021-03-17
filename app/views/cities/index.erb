@@ -1,0 +1,7 @@
+<h1>These are all the cities</h1>
+
+<ul>
+<% @cities.each do |city| %>
+    <li> <%=city.name%>, <%=city.state%> </li>
+    <% end %>
+</ul>
