@@ -1,0 +1,14 @@
+<h1>Petition to rename the city</h1>
+<form action='/cities/<%= @city.id %>' method='post'>
+<input type='hidden' name='_method' value='patch'>
+<label> Name Suggestion </label>
+<br/>
+<input type='text' name='city_name' value= <%= @city.name %>>
+<br/>
+<label> State Suggestion </label>
+<br/>
+<input type='text' name='city_state' value= <%= @city.state %>>
+<br/>
+<input type='submit'>
+</form>
+

@@ -3,3 +3,8 @@
 <h1>City Name: <%= @city.name %> </h1>
 <h2>State Name: <%= @city.state %> </h2>
 <hr/>
+
+<form action='/cities/<%= @city.id %>' method='post'>
+<input type ='hidden' name='_method' value='delete'>
+<input type ='submit' value='Demolish City or Nuke if you are a savage'>
+</form>
